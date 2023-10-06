@@ -14,7 +14,7 @@ function Login() {
   const submit = async e => {
     e.preventDefault();
 
-    const response = await axios.post('/', {
+    const response = await axios.post('https://hiring-test-task.vercel.app/api/login', {
         email, password
     }, {withCredentials: true});
 
