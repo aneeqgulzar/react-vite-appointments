@@ -63,10 +63,9 @@ After doing its thing, it should open up a new browser window, otherwise if you 
 
 ## Dependencies
 
-- React.js
-- React Roter Dom
-- react axios library
-- `react-big-calendar library install` for appointment calendar.
+- `React Roter Dom`
+- `react axios library`
+- `react-big-calendar ` for appointment calendar.
 
 Bonus:
 In case you wish to bundle the project, it is just as simple as setting it up, no Webpack, no Parcel,no configuration needed just use the following command when ready.
