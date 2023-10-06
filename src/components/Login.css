@@ -1,0 +1,81 @@
+#root {
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+ 
+}
+
+.sign-in-container {
+  max-width: 400px;
+  margin: 0px auto;
+}
+
+
+svg{
+  
+  width: 144.313px;
+  height: 50.615px;
+  flex-shrink: 0;
+  fill: #0AA36E;
+ margin: 4rem auto;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Rajdhani';
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 18px;
+margin-left: 3%; 
+}
+
+input[type="email"]{
+  border: none;
+  width: 380px;
+  height: 48px;
+  flex-shrink: 0;
+  border-bottom: 2px solid #0AA36E;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(10, 163, 110, 0.50) inset;
+}
+
+input[type="password"] {
+  width: 380px;
+  height: 48px;
+  flex-shrink: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+ background: #FFF;
+}
+
+button {
+  background: #0AA36E;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 380px;
+  height: 48px;
+  flex-shrink: 0; 
+}
+ .btn{
+  text-align: center;
+ }
+
