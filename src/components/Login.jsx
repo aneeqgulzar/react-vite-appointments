@@ -14,13 +14,13 @@ function Login() {
   const submit = async e => {
     e.preventDefault();
 
-    const response = await axios.post('https://hiring-test-task.vercel.app/api/login', {
+    const response = await axios.post('/', {
         email, password
     }, {withCredentials: true});
 
     console.log(response.data)
 
-    axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
+    axios.defaults.headers.common['Authorization'] = `Bearer ${response.token}`;
 
     setNavigate(true);
 }
