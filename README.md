@@ -6,7 +6,7 @@ I am open to any feedback, additional ideas.
 So let's go ahead and let me give you a brief overview about it.
 
 #  React-vite User Appointment Management System
-I have deployed the app here, feel free to check it out: https://react-vite-cc-form.netlify.app/
+I have deployed the app here, feel free to check it out: 
 
 If the link dosn't work for some reason then shoot me an email which I will link at the end of this document.
 
@@ -34,7 +34,7 @@ This is a web application that allows users to sign in and manage their appointm
 - Automatic token refresh.
 - Appointment management with calendar view.
 - Data stored in browser local storage.
-- Token validity for 10 minutes.
+- Token validity for unlimited time.
 - User-friendly and responsive design.
 
 
@@ -48,7 +48,7 @@ CSS Modules: The main styling tool used was good old CSS but with a twist becaus
 #  How can I set it up?
 You can just clone it by copying the git command below:
 
-git clone https://github.com/Aneeqgulzar/react-vite-cc-form.git
+git clone https://github.com/aneeqgulzar/react-vite-appointments
 or just download the zip file, extranct it and open the project folder with your IDE then proceed to the next step.
 
 When your project is cloned you can open it up using your IDE and run this command in your terminal which will install all the required dependencies
@@ -59,7 +59,13 @@ npm install or npm i
 After the dependencies are installed you can go ahead and run it using the command below:
 
 npm run dev
-After doing its thing, it should open up a new browser window, otherwise if you check your terminal (VSCode) it should give you the address to go to in my case it was localhost:5171
+After doing its thing, it should open up a new browser window, otherwise if you check your terminal (VSCode) it should give you the address to go to in my case it was localhost:5173
+
+## Dependencies
+
+- `React Roter Dom`
+- `react axios library`
+- `react-big-calendar ` for appointment calendar.
 
 Bonus:
 In case you wish to bundle the project, it is just as simple as setting it up, no Webpack, no Parcel,no configuration needed just use the following command when ready.
