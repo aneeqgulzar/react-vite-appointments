@@ -1,25 +1,26 @@
+import {useState} from "react";
 import React from 'react'
 import axios from "axios";
 import {Navigate} from "react-router-dom";
-import {useState} from "react";
 import "./Login.css"
 
 
 function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [navigate, setNavigate] = useState(false);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [navigate, setNavigate] = useState(false);
 
   
-  const handleSubmit = async e => {
+  const submit = async e => {
     e.preventDefault();
 
-    const {data} = await axios.post('/api/', {
+    const response = await axios.post('https://hiring-test-task.vercel.app/api/login', {
         email, password
     }, {withCredentials: true});
 
+    console.log(response.data)
 
-    axios.defaults.headers.common['Authorization'] = `Bearer ${data['token']}`;
+    axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
 
     setNavigate(true);
 }
@@ -35,7 +36,7 @@ if (navigate) {
     </svg>
     <div className="sign-in-container">
             
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={submit}>
               <div className="form-group">
                 <label>Username</label>
                 <input

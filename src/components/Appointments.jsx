@@ -1,6 +1,6 @@
+import {useEffect, useState} from "react";
 import "./Appointments.css"
 import MyCalendar from "./MyCalendar";
-import {useEffect, useState} from "react";
 import axios from "axios";
 import {Navigate} from "react-router-dom";
 
@@ -12,11 +12,11 @@ function Appointments() {
   useEffect(() => {
     (async () => {
         try {
-            const {data} = await axios.get('/api/user');
+            const Res = await axios.get('/api/user');
 
-            setName(data.name);
+            setName(Res.name);
         } catch (e) {
-            setNavigate(true);
+            // setNavigate(true);
         }
     })();
 }, []);
@@ -28,7 +28,7 @@ const logout = async () => {
 }
 
 if (navigate) {
-  return <Navigate to="/login"/>;
+  return <Navigate to="/"/>;
 }
 
   return (
