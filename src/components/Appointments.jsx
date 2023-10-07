@@ -16,7 +16,7 @@ function Appointments() {
 
             setName(Res.name);
         } catch (e) {
-            // setNavigate(true);
+            setNavigate(true);
         }
     })();
 }, []);
