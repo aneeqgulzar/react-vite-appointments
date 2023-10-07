@@ -40,7 +40,7 @@ line-height: 18px;
 margin-left: 3%; 
 }
 
-input[type="email"]{
+input[type="text"]{
   border: none;
   width: 380px;
   height: 48px;

@@ -6,7 +6,7 @@ import "./Login.css"
 
 
 function Login() {
-  const [email, setEmail] = useState('');
+  const [username, setusername] = useState('');
   const [password, setPassword] = useState('');
   const [navigate, setNavigate] = useState(false);
 
@@ -15,7 +15,7 @@ function Login() {
     e.preventDefault();
 
     const response = await axios.post('https://hiring-test-task.vercel.app/api/login', {
-        email, password
+      username, password
     }, {withCredentials: true});
 
     console.log(response.data)
@@ -40,10 +40,10 @@ if (navigate) {
               <div className="form-group">
                 <label>Username</label>
                 <input
-                  type="email"
-                  placeholder="Enter Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                  placeholder="Enter UserName"
+                  value={username}
+                  onChange={(e) => setusername(e.target.value)}
                   required
                 />
               </div>
