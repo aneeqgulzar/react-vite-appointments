@@ -25,7 +25,7 @@ This is a web application that allows users to sign in and manage their appointm
 
 3. **Appointment Page**: Users are then redirected to the appointment page, where they can view their scheduled appointments in a calendar format.
 
-4. **Token Expiry**: To enhance security, the access token is valid for a limited time, typically 30sec. However, the application uses a refresh token mechanism to automatically generate a new access token, ensuring uninterrupted access as long as the user is active.
+4. **Token Expiry**: To enhance security, the access token is valid for a limited time. However, the application uses a refresh token mechanism to automatically generate a new access token, ensuring uninterrupted access as long as the user is active.
 
 ## Features
 
