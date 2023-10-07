@@ -41,7 +41,7 @@ if (navigate) {
                 <label>Username</label>
                 <input
                   type="text"
-                  placeholder="Enter UserName"
+                  placeholder="Enter your Username"
                   value={username}
                   onChange={(e) => setusername(e.target.value)}
                   required

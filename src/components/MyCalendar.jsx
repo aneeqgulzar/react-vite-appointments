@@ -15,7 +15,7 @@ const CustomToolbar = () => {
 const MyCalendar = (props) => {
   const localizer = dayjsLocalizer(dayjs);
 
-  const { name } = props;
+  const name  = props;
 
   const meetings = [
     {
