@@ -12,7 +12,7 @@ function Appointments() {
   useEffect(() => {
     (async () => {
         try {
-            const Res = await axios.get('https://hiring-test-task.vercel.app/api/appointments');
+            const Res = await axios.get('/api/appointments');
 
             setusername(Res.username);
         } catch (e) {
