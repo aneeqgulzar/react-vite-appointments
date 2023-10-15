@@ -21,7 +21,7 @@ function Login() {
 
     axios.defaults.headers.common['Authorization'] = `Bearer ${authToken}`;
 
-    const result=  await axios.post('/api/refresh-token', [axios.defaults.headers.common['Authorization']]);
+    const result=  await axios.post('/api/refresh-token', [axios.defaults.headers.common['Authorization']], {withCredentials: true});
     console.log(result)
 
     setNavigate(true);
