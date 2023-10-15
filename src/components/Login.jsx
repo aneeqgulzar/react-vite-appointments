@@ -14,13 +14,15 @@ function Login() {
   const submit = async e => {
     e.preventDefault();
 
-    const response = await axios.post('/api/login', {
-      username, password
-    }, {withCredentials: true});
+    const response = await axios.post('/api/login', {username, password}, {withCredentials: true});
 
-    console.log(response.data)
+    const authToken = response.data.token;
+    console.log(authToken)
 
-    axios.defaults.headers.common['Authorization'] = `Bearer ${response.token}`;
+    axios.defaults.headers.common['Authorization'] = `Bearer ${authToken}`;
+
+    const result=  await axios.post('/api/refresh-token', [axios.defaults.headers.common['Authorization']]);
+    console.log(result)
 
     setNavigate(true);
 }
