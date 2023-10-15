@@ -6,9 +6,7 @@ I am open to any feedback, additional ideas.
 So let's go ahead and let me give you a brief overview about it.
 
 #  React-vite User Appointment Management System
-I have deployed the app here, feel free to check it out: https://hiring-test-task-rose.vercel.app
 
-If the link dosn't work for some reason then shoot me an email which I will link at the end of this document.
 
 
 
